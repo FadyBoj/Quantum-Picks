@@ -9,10 +9,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable,HasUuids;
+    use HasApiTokens, HasFactory, Notifiable, HasUuids;
 
    protected $table = 'users';
    protected $primaryKey = 'id';
@@ -26,5 +28,10 @@ class User extends Authenticatable
     "verification_code",
     "vCode_date"
    ];
+
+   public function cart_items(): HasMany
+    {
+        return $this->hasMany(Cart::class);
+    }
  
 }

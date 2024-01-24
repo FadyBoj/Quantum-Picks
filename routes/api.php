@@ -51,5 +51,7 @@ Route::controller(ProductController::class)->group(function(){
 
 
 Route::controller(UserController::class)->group(function(){
-    Route::get('/add','addToCart')->middleware('customAuth');
+    Route::post('/cart','addToCart')->middleware(['checkAuth','cartValidation']);
+    Route::get('/cart','getCartItems')->middleware(['checkAuth']);
+    
 });

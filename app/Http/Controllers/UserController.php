@@ -7,11 +7,16 @@ use Illuminate\Support\Facades\Route;
 use App\Exceptions\CustomException;
 use Exception;
 use App\Models\User;
+use App\Models\Cart;
+use GuzzleHttp\Psr7\Response;
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
 use Laravel\Passport\Passport;
+use PhpParser\Node\Stmt\Return_;
 
+
+use function PHPUnit\Framework\isNull;
 
 class UserController extends Controller
 {
@@ -53,8 +58,29 @@ class UserController extends Controller
             $token = $user->createToken('My Token')->accessToken;
             $oneDay = 60 * 24;
 
+            //move cart items from cookies to database
+            $cartItems = json_decode($request->cookie('cart'));
+            if($cartItems)
+            {
+                $formatted_cart_items = [];
+
+                foreach($cartItems as $item)
+                {
+                    $formatted_cart_items[] = [
+                        "id" => $item->id,
+                        "user_id" => $userId,
+                        "quantity" => $item->quantity
+                    ];
+                }
+
+                //Removing user cart items from the database if exist
+                Cart::where('user_id',$user->id)->delete();
+                Cart::insert($formatted_cart_items);
+
+            }
+
             return response()->json(["token" => $token],200)
-            ->cookie("accessToken",$token,$oneDay,null,null,true,true);
+            ->cookie("accessToken",$token,$oneDay,null,null,true,true)->withoutCookie('cart');
 
         }
         catch(Exception $e)
@@ -74,11 +100,78 @@ class UserController extends Controller
 
     //Add to cart
 
-    public function addToCart(Request $request)
+    public function addToCart(Request $request) 
     {
-        $user = Auth::guard('api')->user();
-         return response()->json(["msg" => "Passed $user->firstname"]);
+        try
+        {   
+            //Getting request data
+            $data = $request->only('id','quantity') ;
 
+            //Getting user if authenticated
+            $isAuthenticated = $request->attributes->get('isAuthenticated');
+            $userId = $isAuthenticated ? (Auth::guard('api')->user())->id : null;
+            $user = $isAuthenticated ? User::find($userId) : null; 
+            
+        
+            //Getting cart items
+            $cartItems = json_decode($request->cookie('cart')) ?: ($isAuthenticated ? $user->cart_items()->get() : []);
+
+          
+            foreach($cartItems as $item )
+            {
+                $item->id == $data['id'] ? throw new CustomException('Product already in the cart',400) : "";
+            }
+          
+
+            $newCartItem = [
+                    "id" => $data["id"],
+                    "user_id" => $isAuthenticated ? $user->id : null,
+                    "quantity" => $data["quantity"],
+            ];
+
+            $cartItems[] = $newCartItem;
+
+            //Storing cart in cookie if user not authenticated
+            if(!$isAuthenticated)
+            return response()->json(["msg" => "Successfully added product to cart"],200)
+            ->cookie(
+                "cart",
+                json_encode($cartItems),
+                60 * 24 * 5, //Five days to expire
+                null,
+                null,
+                true, // Secure
+                true // Http Only
+            );
+
+            //Storing cart in database if user is authenticated
+            Cart::create($newCartItem);
+            return response()->json(["msg" => "Successfully added product to cart"],200);
+
+
+        }
+
+        catch(Exception $e)
+        {
+            throw new CustomException($e->getMessage(),400);
+        }
+        
+    }
+
+    public function getCartItems(Request $request)
+    {
+        //Getting user if authenticated
+        $isAuthenticated = $request->attributes->get('isAuthenticated');
+        $userId = $isAuthenticated ? (Auth::guard('api')->user())->id : null;
+        $user = $isAuthenticated ? User::find($userId) : null; 
+
+        //Getting cart items
+        $cartItems = json_decode($request->cookie('cart')) ?: ($isAuthenticated ? $user->cart_items()->get() : null);
+
+        if(!$cartItems || count($cartItems) == 0)
+        throw new CustomException('Cart is empty',400);
+
+        return $cartItems;
     }
 
 }
