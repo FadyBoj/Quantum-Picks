@@ -21,13 +21,10 @@ Route::get('/', function () {
 Route::middleware(['guest'])->group(function() {
     Route::controller(UserController::class)->group(function(){
 
-        Route::post('/register','register')->middleware('registerValidation');
-        Route::post('/login','login');
         Route::get('/login','notDone')->name('login');
     });
 });
 
 
-Route::get('/hi',function (){
-    return "nothing";
-});
+
+

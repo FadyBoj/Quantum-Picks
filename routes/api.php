@@ -4,6 +4,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -22,8 +23,30 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/some-data',function(){
-    $user = Auth::user();
-    return "Sensetive data for $user->firstname with id of: $user->id";
 
-})->middleware('auth:api');
+Route::middleware(['guest'])->group(function() {
+    Route::controller(UserController::class)->group(function(){
+
+        Route::post('/register','register')->middleware('registerValidation');
+        Route::post('/login','login');
+    });
+});
+
+Route::middleware('auth:api')->group(function(){
+
+    Route::controller(UserController::class)->group(function(){
+
+        Route::get('/logout','logout');
+        Route::get('/some-data','notDone');
+
+    });
+
+});
+
+Route::controller(ProductController::class)->group(function(){
+
+    Route::get('/products','getProducts');
+    Route::get('/product/{id}','getSingleProduct');
+
+
+});

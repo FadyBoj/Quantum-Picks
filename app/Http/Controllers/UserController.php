@@ -8,6 +8,7 @@ use App\Exceptions\CustomException;
 use Exception;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cookie;
 
 class UserController extends Controller
 {
@@ -47,6 +48,7 @@ class UserController extends Controller
             $user = User::find($userId);
             $user->tokens()->delete();
             $token = $user->createToken('My Token')->accessToken;
+
             return response()->json(["token" => $token],200);
 
             return ["msg" => "You've passed"];
@@ -56,4 +58,17 @@ class UserController extends Controller
             return response()->json(["msg"=>$e->getMessage()],400);
         }
     }
+
+    //Logout
+
+    public function logout(Request $request){
+        Auth::forgetUser();
+        $userId = Auth::user()->id;
+        $user = User::find($userId);
+        $user->tokens()->delete();
+
+
+        return response()->json(["msg"=> "logged out"],200);
+    }
+
 }
