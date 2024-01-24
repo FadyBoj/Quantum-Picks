@@ -32,7 +32,7 @@ Route::middleware(['guest'])->group(function() {
     });
 });
 
-Route::middleware('auth:api')->group(function(){
+Route::middleware('customAuth')->group(function(){
 
     Route::controller(UserController::class)->group(function(){
 
@@ -47,6 +47,9 @@ Route::controller(ProductController::class)->group(function(){
 
     Route::get('/products','getProducts');
     Route::get('/product/{id}','getSingleProduct');
+});
 
 
+Route::controller(UserController::class)->group(function(){
+    Route::get('/add','addToCart')->middleware('customAuth');
 });

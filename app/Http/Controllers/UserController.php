@@ -7,8 +7,11 @@ use Illuminate\Support\Facades\Route;
 use App\Exceptions\CustomException;
 use Exception;
 use App\Models\User;
+use Illuminate\Contracts\Session\Session;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
+use Laravel\Passport\Passport;
+
 
 class UserController extends Controller
 {
@@ -48,10 +51,11 @@ class UserController extends Controller
             $user = User::find($userId);
             $user->tokens()->delete();
             $token = $user->createToken('My Token')->accessToken;
+            $oneDay = 60 * 24;
 
-            return response()->json(["token" => $token],200);
+            return response()->json(["token" => $token],200)
+            ->cookie("accessToken",$token,$oneDay,null,null,true,true);
 
-            return ["msg" => "You've passed"];
         }
         catch(Exception $e)
         {
@@ -62,13 +66,19 @@ class UserController extends Controller
     //Logout
 
     public function logout(Request $request){
-        Auth::forgetUser();
-        $userId = Auth::user()->id;
-        $user = User::find($userId);
+
+        $user = User::find(Auth::guard('api')->user()->id);
         $user->tokens()->delete();
+         return response()->json(["msg"=> "logged out"],200)->withoutCookie('accessToken');;
+    }
 
+    //Add to cart
 
-        return response()->json(["msg"=> "logged out"],200);
+    public function addToCart(Request $request)
+    {
+        $user = Auth::guard('api')->user();
+         return response()->json(["msg" => "Passed $user->firstname"]);
+
     }
 
 }
