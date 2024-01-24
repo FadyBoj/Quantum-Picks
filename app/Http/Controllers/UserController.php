@@ -17,6 +17,7 @@ use PhpParser\Node\Stmt\Return_;
 
 
 use function PHPUnit\Framework\isNull;
+use function PHPUnit\Framework\returnSelf;
 
 class UserController extends Controller
 {
@@ -158,6 +159,8 @@ class UserController extends Controller
         
     }
 
+    //Getting cart items
+
     public function getCartItems(Request $request)
     {
         //Getting user if authenticated
@@ -172,6 +175,82 @@ class UserController extends Controller
         throw new CustomException('Cart is empty',400);
 
         return $cartItems;
+    }
+
+    //Remove item from cart
+    public function removeFromCart(Request $request)
+    {
+        
+        try
+        {
+            //Validate incoming request
+
+            $request->validateWithBag('removeFromCart',[
+                "id" => "required|numeric"
+            ],[]);
+
+            $productID = $request->id;
+
+            //Getting user if authenticated
+            $isAuthenticated = $request->attributes->get('isAuthenticated');
+            $userId = $isAuthenticated ? (Auth::guard('api')->user())->id : null;
+            $user = $isAuthenticated ? User::find($userId) : null; 
+
+            //Getting cart items
+            $cartItems = !$isAuthenticated ?  json_decode($request->cookie('cart')) : null;
+
+           if(!$isAuthenticated)
+           {
+            $cartItems = json_decode($request->cookie('cart'));
+
+            if(!$cartItems || count($cartItems) == 0)
+            throw new CustomException('Cart is already empty.',400);
+
+            if(count($cartItems) == 1)
+            return response()->json(["msg" => "Successfully removed product from your cart."],200)
+            ->withoutCookie('cart');
+
+            //Filtering cart items
+            $filtered_cart_items = [];
+            
+            foreach($cartItems as $item)
+            {
+                if($item->id !== $productID)
+                $filtered_cart_items[] = $item;
+                
+            }
+
+
+            return response()->json(['msg'=> 'Successfully removed product from your cart.'],200)
+            ->cookie(
+                "cart",
+                json_encode($filtered_cart_items),
+                60 * 24 * 5, //Five days to expire
+                null,
+                null,
+                true, // Secure
+                true // Http Only
+            );
+
+           }
+           else
+           {
+            Cart::where('user_id',$user->id)
+            ->where('id',$productID)
+            ->delete();
+
+            return response()->json(['msg'=> 'Successfully removed product from your cart.'],200);
+
+           }
+
+
+        }
+        catch(Exception $e)
+        {
+            throw new CustomException($e->getMessage(),400);
+        }
+
+
     }
 
 }
