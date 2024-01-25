@@ -11,10 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('cart', function (Blueprint $table) {
-            $table->dropColumn('created_at');
-            $table->dropColumn('updated_at');
-      
+        Schema::table('addresses', function (Blueprint $table) {
+          $table->boolean('active')->default(0);
         });
     }
 
@@ -23,5 +21,6 @@ return new class extends Migration
      */
     public function down(): void
     {
+        Schema::dropIfExists('addresses');
     }
 };

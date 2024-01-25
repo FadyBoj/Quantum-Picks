@@ -6,8 +6,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Exceptions\CustomException;
 use Exception;
-use App\Models\User;
-use App\Models\Cart;
 use GuzzleHttp\Psr7\Response;
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Support\Facades\Auth;
@@ -15,6 +13,15 @@ use Illuminate\Support\Facades\Cookie;
 use Laravel\Passport\Passport;
 use PhpParser\Node\Stmt\Return_;
 
+//Models
+use App\Models\User;
+use App\Models\Cart;
+use App\Models\Order;
+use App\Models\Address;
+use App\Models\Item;
+use App\Models\Items;
+use App\Models\Product;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 use function PHPUnit\Framework\isNull;
 use function PHPUnit\Framework\returnSelf;
@@ -116,7 +123,7 @@ class UserController extends Controller
         
             //Getting cart items
             $cartItems = json_decode($request->cookie('cart')) ?: ($isAuthenticated ? $user->cart_items()->get() : []);
-
+            $product = Product::find($data['id']);
           
             foreach($cartItems as $item )
             {
@@ -127,6 +134,7 @@ class UserController extends Controller
             $newCartItem = [
                     "id" => $data["id"],
                     "user_id" => $isAuthenticated ? $user->id : null,
+                    "price" => $product->price,
                     "quantity" => $data["quantity"],
             ];
 
@@ -272,6 +280,134 @@ class UserController extends Controller
         Cart::where('user_id',$user->id)->delete();
 
         return response()->json(["msg" => "Cart cleared."],200);
+    }
+
+
+    //Add new address
+    public function addNewAddress(Request $request)
+    {
+        try
+        {
+        $userID = Auth::guard('api')->user()->id;
+        $user = User::find($userID);
+        $userAddresses = $user->addresses()->get();
+
+        //Getting request data
+        $data = $request->all();
+
+        foreach($userAddresses as $item) {
+
+            if ($item->street == $data['street'])
+            throw new CustomException("This address already exist",400);
+        }
+
+        Address::create([
+            "user_id" => $user->id,
+            "street" => $data['street'],
+            "city" => $data['city'],
+            "country" => $data['country'],
+        ]);
+
+        return response()->json(["msg" => "new Address added."],200);
+
+        }
+        catch(Exception $e)
+        {
+            throw new CustomException($e->getMessage(),500);
+        }
+   
+    }
+
+    public function placeOrder(Request $request)
+    {
+        try
+        {
+            //Validate incoming request
+
+            $request->validateWithBag('order',[
+                "addressID" => "numeric|required"
+            ],[
+                "addressID.required" => "The address id field is required.",
+                "addressID.numeric" => "The address id field must be a number."
+            ]);
+
+            $data = $request->all();
+
+            //Getting user
+
+            $userID = Auth::guard('api')->user()->id;
+            $user = User::find($userID);
+            $cartItems = $user->cart_items()->get();
+            $userAddresses = $user->addresses()->get();
+
+            if(!$cartItems || count($cartItems) == 0)
+            throw new CustomException("Cart is empty",400);
+
+            $pass =  false;
+
+            foreach($userAddresses as $item)
+            {
+                if($item->id == $data['addressID'])
+                {
+                    $pass = true;
+                    break;
+                }
+            }
+
+            if(!$pass)
+            throw new CustomException('Address ID not found',400);
+
+            //Validate cartItems and calculate total price
+            $total_price = 0;
+            $orderProducts = [];
+            foreach($cartItems as $item)
+            {
+                $product = Product::findOrFail($item->id);
+                $orderProducts[] = $product;
+                $total_price += ($product->price * $item->quantity);
+            }
+
+            //Formatting address
+            $userAddress = $user->addresses()->get()->where('id',$data['addressID'])->first();   
+            $formattedAddress = $userAddress->street . ", " . $userAddress->city . ", " . $userAddress->country;
+
+            //Placing order
+            $newOrder = Order::create([
+                "user_id" => $user->id,
+                "address" => $formattedAddress,
+                "name" => $user->firstname . " " . $user->lastname,
+                "total_price" => $total_price
+            ]);
+
+            $orderItems = [];
+
+            foreach($orderProducts as $index => $item)
+            {
+                $orderItems[] = [
+                    "id" => $item->id,
+                    "order_id" => $newOrder->id,
+                    "quantity" => $cartItems[$index]->quantity,
+                    "price" => $item->price
+                ];
+            };
+
+            Item::insert($orderItems);
+            Cart::where('user_id',$user->id)->delete();
+
+            return response()->json(["Successfully placed your order"],200);
+
+
+
+        }
+        catch(ModelNotFoundException $e)
+        {
+            throw new $e;
+        }
+        catch(Exception $e)
+        {
+            throw new CustomException($e->getMessage(),400);
+        }
+
     }
 
 }

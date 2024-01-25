@@ -70,5 +70,7 @@ class Kernel extends HttpKernel
         'customAuth' => \App\Http\Middleware\CustomAuthentication::class,
         'checkAuth' => \App\Http\Middleware\CheckAuth::class,
         "cartValidation" => \App\Http\Middleware\CartFormValidation::class,
+        "userAuthorize" => \App\Http\Middleware\UserAuthorization::class,
+        "addressValidation" => \App\Http\Middleware\NewAddressValidation::class,
     ];
 }

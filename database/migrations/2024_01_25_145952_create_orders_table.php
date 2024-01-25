@@ -8,23 +8,28 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
+     * @return void
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('orders', function (Blueprint $table) {
-            $table->id();
-            $table->uuid('user_id');
-            $table->string('address',255);
-            $table->string('name',100);
-            $table->float('total_price');
+            $table->bigIncrements('id');
+            $table->char('user_id', 36);
+            $table->string('address');
+            $table->string('name', 100);
+            $table->double('total_price', 8, 2);
             $table->timestamps();
+            $table->string('status');
         });
     }
 
     /**
      * Reverse the migrations.
+     *
+     * @return void
      */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('orders');
     }

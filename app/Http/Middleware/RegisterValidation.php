@@ -34,8 +34,8 @@ class RegisterValidation
 
             $request->validateWithBag('register',[
                 'email' => 'email:rfc,dns|required|unique:users',
-                'firstname' => 'required|string||min:3',
-                'lastname' => 'required|string|alpha|min:3',
+                'firstname' => 'required|string||min:3|alpha',
+                'lastname' => 'required|string|alpha|min:3|alpha',
                 'password' => ['required', 'confirmed', Password::min(8)
                 ->letters()
                 ->mixedCase()

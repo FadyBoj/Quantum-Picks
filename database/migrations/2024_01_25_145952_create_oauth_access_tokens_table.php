@@ -8,13 +8,15 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
+     * @return void
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('oauth_access_tokens', function (Blueprint $table) {
             $table->string('id', 100)->primary();
-            $table->uuid('user_id',255)->nullable()->index();
-            $table->uuid('client_id',255);
+            $table->char('user_id', 36)->nullable()->index();
+            $table->char('client_id', 36);
             $table->string('name')->nullable();
             $table->text('scopes')->nullable();
             $table->boolean('revoked');
@@ -25,8 +27,10 @@ return new class extends Migration
 
     /**
      * Reverse the migrations.
+     *
+     * @return void
      */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('oauth_access_tokens');
     }

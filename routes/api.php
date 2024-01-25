@@ -37,7 +37,9 @@ Route::middleware('customAuth')->group(function(){
     Route::controller(UserController::class)->group(function(){
 
         Route::get('/logout','logout');
-        Route::get('/some-data','notDone');
+        Route::get('/orders','notDone');
+        Route::post('/orders','placeOrder')->middleware('userAuthorize');
+        Route::post('/add-new-address','addNewAddress')->middleware('addressValidation');
 
     });
 
@@ -49,11 +51,15 @@ Route::controller(ProductController::class)->group(function(){
     Route::get('/product/{id}','getSingleProduct');
 });
 
+Route::middleware('checkAuth')->group(function(){
 
-Route::controller(UserController::class)->group(function(){
-    Route::post('/cart','addToCart')->middleware(['checkAuth','cartValidation']);
-    Route::get('/cart','getCartItems')->middleware(['checkAuth']);
-    Route::delete('/cart','removeFromCart')->middleware(['checkAuth']);
-    Route::patch('/cart','clearCart')->middleware(['checkAuth']);
-    
+    Route::controller(UserController::class)->group(function(){
+        Route::post('/cart','addToCart')->middleware('cartValidation');
+        Route::get('/cart','getCartItems');
+        Route::delete('/cart','removeFromCart');
+        Route::patch('/cart','clearCart');
+        
+    });
+
 });
+

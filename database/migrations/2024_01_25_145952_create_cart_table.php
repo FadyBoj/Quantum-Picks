@@ -8,21 +8,25 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
+     * @return void
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('cart', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('user_id');
+            $table->integer('id');
+            $table->char('user_id', 36);
             $table->integer('quantity');
-            $table->timestamps();
+            $table->bigIncrements('primaryID');
         });
     }
 
     /**
      * Reverse the migrations.
+     *
+     * @return void
      */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('cart');
     }
