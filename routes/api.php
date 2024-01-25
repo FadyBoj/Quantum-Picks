@@ -54,5 +54,6 @@ Route::controller(UserController::class)->group(function(){
     Route::post('/cart','addToCart')->middleware(['checkAuth','cartValidation']);
     Route::get('/cart','getCartItems')->middleware(['checkAuth']);
     Route::delete('/cart','removeFromCart')->middleware(['checkAuth']);
+    Route::patch('/cart','clearCart')->middleware(['checkAuth']);
     
 });

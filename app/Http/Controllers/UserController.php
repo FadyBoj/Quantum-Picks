@@ -242,15 +242,36 @@ class UserController extends Controller
             return response()->json(['msg'=> 'Successfully removed product from your cart.'],200);
 
            }
-
-
         }
         catch(Exception $e)
         {
             throw new CustomException($e->getMessage(),400);
         }
 
+    }
 
+    //Clear cart
+
+    public function clearCart(Request $request)
+    {
+        //Getting user if authenticated
+        $isAuthenticated = $request->attributes->get('isAuthenticated');
+        $userId = $isAuthenticated ? (Auth::guard('api')->user())->id : null;
+
+        if(!$isAuthenticated)
+        {
+            $cartItems = json_decode($request->cookie('cart'));
+            return (!$cartItems || count($cartItems) == 0) ? 
+            response()->json(["msg" => "Cart is already empty."],400)
+            :
+            response()->json(["msg" => "Cart cleared."],200)
+            ->withoutCookie('cart');
+        }
+
+        $user = User::find($userId);
+        Cart::where('user_id',$user->id)->delete();
+
+        return response()->json(["msg" => "Cart cleared."],200);
     }
 
 }
