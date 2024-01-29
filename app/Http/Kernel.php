@@ -72,5 +72,7 @@ class Kernel extends HttpKernel
         "cartValidation" => \App\Http\Middleware\CartFormValidation::class,
         "userAuthorize" => \App\Http\Middleware\UserAuthorization::class,
         "addressValidation" => \App\Http\Middleware\NewAddressValidation::class,
+        'AdminAuth' => \App\Http\Middleware\AdminAuthorization::class,
+        'productValidation' => \App\Http\Middleware\ProductValidation::class,
     ];
 }

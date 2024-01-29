@@ -410,4 +410,49 @@ class UserController extends Controller
 
     }
 
+
+    //Get previous user orders
+
+    public function getPreviousOrders(Request $request)
+    {
+        //Getting user
+        $userID = Auth::guard('api')->user()->id;
+        $user = User::find($userID);
+
+        $orders = $user->orders()->get();
+       
+        return $orders;
+    }
+
+    public function getSingleOrder(Request $request, int $id)
+    {
+       //Getting user
+       $userID = Auth::guard('api')->user()->id;
+       $user = User::find($userID);
+       $order = $user->orders()->where('id', $id)->first();
+
+       if(!$order)
+       throw new CustomException("Not found",404);
+    
+       $orderItems = [];
+       $orderItemsInstances = $order->items()->get();
+
+       foreach($orderItemsInstances as $index => $item)
+       {    
+            $product = Product::findOrFail($item->id);
+            $orderItems[] = [
+                "id" => $product->id,
+                "title" => $product->tile,
+                "price" => $product->price,
+                "image" => $product->image,
+                "quantity" => $orderItemsInstances[$index]->quantity
+            ];
+       }
+
+        $order->items = $orderItems;
+
+       return response()->json($order,200);
+
+    }
+
 }

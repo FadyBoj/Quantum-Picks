@@ -4,6 +4,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\UserController;
+use  App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Auth;
 
@@ -37,13 +38,26 @@ Route::middleware('customAuth')->group(function(){
     Route::controller(UserController::class)->group(function(){
 
         Route::get('/logout','logout');
-        Route::get('/orders','notDone');
+        Route::get('/orders','getPreviousOrders')->middleware('userAuthorize');
         Route::post('/orders','placeOrder')->middleware('userAuthorize');
+        Route::get('/orders/{id}','getSingleOrder')->middleware('userAuthorize');
         Route::post('/add-new-address','addNewAddress')->middleware('addressValidation');
 
     });
 
 });
+
+//Admin routes
+// Route::middleware([''])->group(function(){
+
+    Route::controller(AdminController::class)->group(function(){
+
+        Route::post('/admin/products','addProduct')->middleware('productValidation');
+        Route::post('/admin/categories','addCategory');
+    
+    });
+
+// });
 
 Route::controller(ProductController::class)->group(function(){
 
@@ -58,8 +72,6 @@ Route::middleware('checkAuth')->group(function(){
         Route::get('/cart','getCartItems');
         Route::delete('/cart','removeFromCart');
         Route::patch('/cart','clearCart');
-        
     });
-
 });
 

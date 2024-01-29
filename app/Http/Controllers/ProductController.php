@@ -11,7 +11,7 @@ class ProductController extends Controller
 {
     public function getProducts(Request $request)
     {
-        $products = Product::all();
+        $products = Product::with('images')->get();
         return response()->json($products,200);
     }
 
