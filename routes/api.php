@@ -53,6 +53,7 @@ Route::middleware('customAuth')->group(function(){
     Route::controller(AdminController::class)->group(function(){
 
         Route::post('/admin/products','addProduct')->middleware('productValidation');
+        Route::post('/admin/modify-product','modifyProduct')->middleware('modifyProductValidation');
         Route::post('/admin/categories','addCategory');
     
     });

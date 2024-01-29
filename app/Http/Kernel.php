@@ -74,5 +74,6 @@ class Kernel extends HttpKernel
         "addressValidation" => \App\Http\Middleware\NewAddressValidation::class,
         'AdminAuth' => \App\Http\Middleware\AdminAuthorization::class,
         'productValidation' => \App\Http\Middleware\ProductValidation::class,
+        "modifyProductValidation" => \App\Http\Middleware\ModifyProductValidation::class,
     ];
 }
