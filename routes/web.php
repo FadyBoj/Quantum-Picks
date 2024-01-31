@@ -14,17 +14,25 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+})->name('home');
+
+
+
+
+Route::controller(UserController::class)->group(function(){
+    Route::get('/auth/google','googleAuth');
+    Route::get('/auth/google/callback','googleCallback');
 });
 
+//Required Auth routes
 
-Route::middleware(['guest'])->group(function() {
-    Route::controller(UserController::class)->group(function(){
+Route::middleware('customAuth')->group(function(){
 
-        Route::get('/login','notDone')->name('login');
-    });
+    Route::get('/complete-data', function () {
+        return view('index');
+    })->name('completeData')->middleware('checkAuth');
+    
 });
-
-
 
 

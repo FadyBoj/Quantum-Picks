@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
 use Laravel\Passport\Passport;
 use PhpParser\Node\Stmt\Return_;
+use Laravel\Socialite\Facades\Socialite;
+use Illuminate\Support\Facades\Date;
+
 
 //Models
 use App\Models\User;
@@ -22,6 +25,7 @@ use App\Models\Item;
 use App\Models\Items;
 use App\Models\Product;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+
 
 use function PHPUnit\Framework\isNull;
 use function PHPUnit\Framework\returnSelf;
@@ -57,13 +61,16 @@ class UserController extends Controller
         {
          
             $credentials =  $request->only("email","password");
+
             if(!Auth::attempt($credentials))
             throw new CustomException("Email and password are mismatched",400);
 
             $userId = Auth::user()->id;
             $user = User::find($userId);
+
+
             $user->tokens()->delete();
-            $token = $user->createToken('My Token')->accessToken;
+            $token = $user->createToken('ApiToken')->accessToken;
             $oneDay = 60 * 24;
 
             //move cart items from cookies to database
@@ -77,7 +84,8 @@ class UserController extends Controller
                     $formatted_cart_items[] = [
                         "id" => $item->id,
                         "user_id" => $userId,
-                        "quantity" => $item->quantity
+                        "quantity" => $item->quantity,
+                        "price" => $item->price
                     ];
                 }
 
@@ -453,6 +461,124 @@ class UserController extends Controller
 
        return response()->json($order,200);
 
+    }
+
+    //Google auth
+    public function googleAuth(Request $request)
+    {
+        return Socialite::driver('google')->redirect();
+    }
+
+
+    //Google callback (Register or login)
+
+    public function googleCallback(Request $request)
+    {
+        $user = Socialite::driver('google')->stateless()->user();
+        $user = $user->user;
+
+        if(!User::where('email',$user['email'])->exists())
+        {
+            $userInformation = [];
+            $missing= [];
+
+            $userInformation['email'] = $user['email'];
+
+            key_exists('given_name',$user) ? $userInformation['firstname'] = $user['given_name']:
+            $missing[] = 'firstname';
+
+            key_exists('family_name',$user) ? $userInformation['familyname'] = $user['family_name']:
+            $missing[] = 'lastname';
+
+            //Check if account information is missig
+            if(count($missing) > 0)
+            {
+                $newUser =  User::create([
+                    "email" => $user["email"],
+                    "firstname" => in_array('firstname',$missing) ? null : $userInformation['firstname'],
+                    "lastname" => in_array('lastname',$missing) ? null : $userInformation['lastname'],
+                    "password" => null,
+                    "verification_code" => mt_rand(1000000,9999999),
+                    "vCode_date" => Date::now(),
+                    "complete" => false,
+                    "google" => true,
+                    "regular" => false
+                ]);
+
+                $token = $newUser->createToken('ApiToken')->accessToken;
+                $oneDay = 60 * 24;
+
+                return redirect()->route('completeData')
+                ->cookie("accessToken",$token,$oneDay,null,null,true,true);
+            }
+
+            //If information are complete
+
+            $newUser =  User::create([
+                "email" => $user["email"],
+                "firstname" =>  $userInformation['firstname'],
+                "lastname" =>  $userInformation['familyname'],
+                "password" => null,
+                "verification_code" => mt_rand(1000000,9999999),
+                "vCode_date" => Date::now(),
+                "complete" => false,
+                "google" => true,
+                "regular" => false
+            ]);
+
+            $token = $newUser->createToken('ApiToken')->accessToken;
+            $oneDay = 60 * 24;
+
+            return redirect()->route('home')
+            ->cookie("accessToken",$token,$oneDay,null,null,true,true);
+
+            
+        }
+
+        //If account  exist
+
+        //Check if the account type is google
+        $user = User::where("email",$user["email"])->first();
+            
+        if(!$user->google)
+        throw new CustomException("Please try different email address",400);
+
+        $token = $user->createToken("ApiToken")->accessToken;
+        $oneDay = 60 * 24;
+
+        //move cart items from cookies to database
+        $cartItems = json_decode($request->cookie('cart'));
+        if($cartItems)
+        {
+            $formatted_cart_items = [];
+
+            foreach($cartItems as $item)
+            {
+                $formatted_cart_items[] = [
+                    "id" => $item->id,
+                    "user_id" => $user->id,
+                    "quantity" => $item->quantity,
+                    "price" => $item->price
+                ];
+            }
+
+            //Removing user cart items from the database if exist
+            Cart::where('user_id',$user->id)->delete();
+            Cart::insert($formatted_cart_items);
+
+        }
+
+        return response()->json(["token" => $token],200)
+        ->cookie("accessToken",$token,$oneDay,null,null,true,true)->withoutCookie('cart');
+    }
+
+    //Fill account missing information 
+
+    public function fillMissingInformation(Request $request)
+    {
+        $user = Socialite::driver('google')->stateless()->user();
+        $user = $user->user;
+        return response()->json($user,200);
     }
 
 }

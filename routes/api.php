@@ -29,7 +29,7 @@ Route::middleware(['guest'])->group(function() {
     Route::controller(UserController::class)->group(function(){
 
         Route::post('/register','register')->middleware('registerValidation');
-        Route::post('/login','login');
+        Route::post('/login','login')->middleware('loginValidation');
     });
 });
 
@@ -73,6 +73,7 @@ Route::middleware('checkAuth')->group(function(){
         Route::get('/cart','getCartItems');
         Route::delete('/cart','removeFromCart');
         Route::patch('/cart','clearCart');
+        Route::get('/complete-data','completeData');
     });
 });
 

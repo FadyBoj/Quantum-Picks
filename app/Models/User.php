@@ -21,12 +21,19 @@ class User extends Authenticatable
 
    protected $fillable = [
     "email",
-    "password",
     "firstname",
     "lastname",
     "password",
     "verification_code",
-    "vCode_date"
+    "vCode_date",
+    "complete",
+    "google",
+    "regular"
+   ];
+   
+   protected $attributes = [
+    "google" => false,
+    "regular" => false
    ];
 
    public function cart_items(): HasMany

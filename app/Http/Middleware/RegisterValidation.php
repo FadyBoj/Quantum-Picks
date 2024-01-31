@@ -27,7 +27,10 @@ class RegisterValidation
             $request->merge([
                 "email" => strtolower($request->email), 
                 "verification_code" => mt_rand(1000000,9999999),
-                "vCode_date" => Date::now()
+                "vCode_date" => Date::now(),
+                "regular" => true,
+                "google" => false,
+                "complete" => true
             ]);
 
             //Validate the user data before storing it it Database
