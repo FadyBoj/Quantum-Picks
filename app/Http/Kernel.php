@@ -76,5 +76,7 @@ class Kernel extends HttpKernel
         'productValidation' => \App\Http\Middleware\ProductValidation::class,
         "modifyProductValidation" => \App\Http\Middleware\ModifyProductValidation::class,
         "loginValidation" => \App\Http\Middleware\LoginValidation::class,
+        "completeDataValidation" => \App\Http\Middleware\CompleteDataValidation::class,
+        "completeAccount" => \App\Http\Middleware\CompleteAccount::class,
     ];
 }

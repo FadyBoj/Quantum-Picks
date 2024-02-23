@@ -24,6 +24,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
+//Auth routes
 
 Route::middleware(['guest'])->group(function() {
     Route::controller(UserController::class)->group(function(){
@@ -33,6 +34,8 @@ Route::middleware(['guest'])->group(function() {
     });
 });
 
+
+//User data routes
 Route::middleware('customAuth')->group(function(){
 
     Route::controller(UserController::class)->group(function(){
@@ -42,7 +45,7 @@ Route::middleware('customAuth')->group(function(){
         Route::post('/orders','placeOrder')->middleware('userAuthorize');
         Route::get('/orders/{id}','getSingleOrder')->middleware('userAuthorize');
         Route::post('/add-new-address','addNewAddress')->middleware('addressValidation');
-
+        Route::post('complete-data','completeData')->middleware('completeDataValidation');
     });
 
 });
@@ -60,11 +63,20 @@ Route::middleware('customAuth')->group(function(){
 
 // });
 
+
+//Products Routes
+
 Route::controller(ProductController::class)->group(function(){
 
     Route::get('/products','getProducts');
     Route::get('/product/{id}','getSingleProduct');
+    // Route::get('/add-offer','addOffers');
+    // Route::get('/add-products','addProducts') for adding data dynamicly from a json file
+
 });
+
+
+//Cart operations routes
 
 Route::middleware('checkAuth')->group(function(){
 

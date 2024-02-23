@@ -1,7 +1,10 @@
 <?php
 
+use App\Exceptions\CustomException;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,8 +33,14 @@ Route::controller(UserController::class)->group(function(){
 Route::middleware('customAuth')->group(function(){
 
     Route::get('/complete-data', function () {
+
+        $user = Auth::guard('api')->user();
+        
+        if($user->complete)
+        throw new CustomException("Not found",404);
+
         return view('index');
-    })->name('completeData')->middleware('checkAuth');
+    })->name('completeData');
     
 });
 

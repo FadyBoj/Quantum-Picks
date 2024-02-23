@@ -1,0 +1,1053 @@
+[
+    {
+        "title": "AMD Ryzen 5 5600X 6-Core 3.7 GHz (4.6 GHz Turbo)",
+        "price": "11,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/AMD/19-113-666-V01-1000x1000w.jpg"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "Intel Core i5-10400F 6-Core/12-Thread 2.9GHz (4.3 GHz Turbo) LGA 1200",
+        "price": "7,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Intel/10400f-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Intel/10400f1-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Intel/10400f2-1000x1000h.jpg"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "Intel Core i5-12400F (6P) Cores 12-Threads up to 4.4 GHz LGA1700",
+        "price": "9,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Intel/LD0005914930_1-1000x1000.jpg"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "AMD Ryzen 5 5500 6-Core 3.6 GHz (4.2 GHz Turbo)",
+        "price": "6,750.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/AMD/19-113-666-V01-1000x1000w.jpg"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "AMD Ryzen 9 5900X 12-Core 3.7 GHz (4.8 GHz Turbo)",
+        "price": "22,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/AMD/19-113-664-V01-1000x1000w.jpg"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "AMD Ryzen 5 5600 - Ryzen 5 5000 Series Vermeer (Zen 3) 6-Core 3.5 GHz Socket AM4 65W",
+        "price": "9,800.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/AMD/19-113-683-V02-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/AMD/19-113-683-V01-1000x1000w.jpg"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "Intel Core i7-13700K - Raptor Lake 16-Core (8P+8E) LGA 1700 125W",
+        "price": "27,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Intel/19-118-414-V03-1000x1000w.jpg"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "Intel Core i5-13400F 10 cores (6 P-cores + 4 E-cores) 2.5GHz 20MB Cache",
+        "price": "14,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Intel/19-118-431-01-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/Intel/19-118-431-02-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/Intel/19-118-431-03-1000x1000w.png"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "AMD Ryzen 9 7950X3D - 16-Core 4.5 GHz - Socket AM5",
+        "price": "42,750.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/AMD/19-113-791-01-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/AMD/19-113-791-02-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/AMD/19-113-791-03-1000x1000w.png"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "AMD Ryzen 9 7950X - 16-Core 4.5 GHz - Socket AM5 - 170W Desktop Processor ",
+        "price": "40,750.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/AMD/1536834-amd-ryzen-9-7000-series-PIB-angle-1260x709-gigapixel-art-scale-6_00x-1000x1000w.png"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "Intel Core i9-14900K - Core i9 24-Core (8P+16E) LGA 1700",
+        "price": "39,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Intel/61jRMCAX4CL._AC_SL1500_-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Intel/61f8hqeg-dL._AC_SL1080_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Intel/61x6XuKeEGL._AC_SL1080_-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Intel/61ujd7RN-3L._AC_SL1500_-1000x1000w.jpg"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "Intel Core i9-13900K - Raptor Lake 24-Core (8P+16E) P-core Base Frequency: 3.0 GHz E-core Base Frequency: 2.2 GHz LGA 1700 125W - Intel UHD Graphics 770",
+        "price": "37,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Intel/19-118-412-V01-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Intel/19-118-412-V02-1000x1000w.jpg"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "AMD Ryzen 9 7900X3D - 12-Core 4.4 GHz Socket AM5 120W",
+        "price": "33,250.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/AMD/19-113-792-03-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/AMD/19-113-792-01-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/AMD/19-113-792-02-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/AMD/674518_643866_02_front_comping-1000x1000.jpg"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "Intel Core i9-12900K - Core i9 12th Gen Alder Lake 16-Core (8P+8E) 3.2 GHz LGA 1700 125W",
+        "price": "29,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Intel/19-118-339-08-1000x1000w.jpg"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "Intel Core i7-14700K - Core i7 20-Core (8P+12E) LGA 1700",
+        "price": "29,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Intel/19-118-468-03-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Intel/19-118-468-04-1000x1000w.jpg"
+        ],
+        "category": "processors"
+    },
+    {
+        "title": "GIGABYTE B450 Aorus ELITE V2",
+        "price": "7,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/500-(5)-2-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/500-(1)-3-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/500-(2)-3-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/500-(3)-3-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/500-3-1000x1000w.png"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "GIGABYTE B550M DS3H",
+        "price": "7,250.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/ds3h-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/ds3h2-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/ds3h1-1000x1000w.jpg"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "GIGABYTE B450M-S2H",
+        "price": "4,700.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Motherboard/AMD/GIGABYTE/B450M-S2H/1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Motherboard/AMD/GIGABYTE/B450M-S2H/5-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Motherboard/AMD/GIGABYTE/B450M-S2H/3-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Motherboard/AMD/GIGABYTE/B450M-S2H/2-1000x1000w.jpg"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "Gigabyte B450M DS3H V2",
+        "price": "5,250.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/1000-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/1000-(3)-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/1000-(2)-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/1000-(1)-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/1000-(4)-1000x1000w.png"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "MSI PRO B660M-A DDR4 LGA 1700",
+        "price": "8,400.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Msi/13-144-531-V06-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/13-144-531-V01-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/13-144-531-V02-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/13-144-531-V03-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/13-144-531-V04-1-1000x1000w.jpg"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "MSI MAG B660M BAZOOKA DDR4 LGA 1700",
+        "price": "9,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Msi/13-144-528-V06-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/13-144-528-V01-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/13-144-528-V02-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/13-144-528-V03-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/13-144-528-V04-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/13-144-528-V07-1000x1000w.jpg"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "ASUS ROG STRIX Z790-F Gaming WiFi DDR5 LGA 1700",
+        "price": "29,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Asus/13-119-599-V01-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/81NphHqDRxL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/81LvxAQh9HL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/81plzLU2KSL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/81mdF4k6HuL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/81M98X3XhjL._AC_SL1500_-1000x1000h.jpg"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "ASUS TUF Gaming X670E-PLUS WiFi DDR5",
+        "price": "22,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Asus/13-119-586-01-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/13-119-586-03-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/13-119-586-04-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/13-119-586-06-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/13-119-586-07-1000x1000w.jpg"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "MSI MAG Z790 Tomahawk WiFi LGA 1700 ",
+        "price": "21,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Msi/81aRnPKw8TL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/91MvF4TFtSL._AC_SL1500_-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/91cC0IIYvLL._AC_SL1500_-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/81jiPgs3KGL._AC_SL1500_-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/81iKM3AyOTL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/71E7iJLtbGL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/81e0Bg9o1JL._AC_SL1500_-1000x1000w.jpg"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "ASUS TUF Gaming Z790-Plus WiFi DDR5 LGA 1700",
+        "price": "21,250.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Asus/81rX0VhoStL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/8131H4YQAEL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/81fNgIkpsvL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/81e9bKJ0sYL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/81vwunw01KL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/81U2wgNYcGL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/81ToISisueL._AC_SL1500_-1000x1000w.jpg"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "MSI MAG Z790 Tomahawk WiFi DDR4 LGA 1700",
+        "price": "19,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Msi/11-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/12-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/13-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/15-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/16-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/17-1000x1000w.jpg"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "ASUS PRIME X670-P DDR5",
+        "price": "18,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Asus/7153eeksc3L._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/81UuH9-Le0L._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/816Y-+WBGCL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/71Mtfkev7bL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/81S9sIOoskL._AC_SL1500_-1000x1000w.jpg"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "GIGABYTE Z790 GAMING X AX ",
+        "price": "18,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/13-145-429-01-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/13-145-429-03-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/13-145-429-04-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/13-145-429-06-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/13-145-429-02-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/13-145-429-05-1000x1000w.jpg"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "GIGABYTE Z790 UD ",
+        "price": "16,250.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/2000-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/2000-(1)-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/2000-(2)-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/2000-(3)-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/Gigabyte/2000-(4)-1000x1000.png"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "ASUS PRIME Z790-P DDR5 LGA 1700",
+        "price": "16,250.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Asus/81PM0YLjEJL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/91dJ0Mm5GdL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/81q3No3Ko0L._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/81F+zyO6eCL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/71RQlXJPFkL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Asus/71mPsFT+o1L._AC_SL1500_-1000x1000h.jpg"
+        ],
+        "category": "motherboards"
+    },
+    {
+        "title": "Team T-Force Delta RGB 8GB (1 x 8GB) DDR4 3200 MHz CL16 1.35V",
+        "price": "1,600.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/RAM/Team%20T-Force%20Delta%20RGB%208GB%20(1%20x%208GB)%20DDR4%203000%20MHz%20CL16%201.35V/1-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/RAM/Team%20T-Force%20Delta%20RGB%208GB%20(1%20x%208GB)%20DDR4%203000%20MHz%20CL16%201.35V/3-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/RAM/Team%20T-Force%20Delta%20RGB%208GB%20(1%20x%208GB)%20DDR4%203000%20MHz%20CL16%201.35V/2-1000x1000.jpg"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "TEAM GROUP T-Force Vulcan Z 8GB 3200MHz CL16",
+        "price": "1,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/71Bh3vSQNAL._AC_SL1500___16147-1000x1000w.jpg"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "G.skill Trident Z 16GB (2x8) 3200 CL16",
+        "price": "3,300.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/RAM/Gskill%20Trident%20Z%2016GB%20(2x8)%203200%20CL16/1-1000x1000w.jpg"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "ADATA XPG D50G 16GB (2X8) 3600 CL18 RGB",
+        "price": "3,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/ADATA/d50-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/ADATA/d502-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/ADATA/d503-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/ADATA/d504-1-1000x1000w.jpg"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "Team T-Force Delta RGB 16GB (1 x 16GB) DDR4 3200 MHz CL16 1.35V",
+        "price": "2,900.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/RAM/Team%20T-Force%20Delta%20RGB%208GB%20(1%20x%208GB)%20DDR4%203000%20MHz%20CL16%201.35V/1-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/RAM/Team%20T-Force%20Delta%20RGB%208GB%20(1%20x%208GB)%20DDR4%203000%20MHz%20CL16%201.35V/2-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/RAM/Team%20T-Force%20Delta%20RGB%208GB%20(1%20x%208GB)%20DDR4%203000%20MHz%20CL16%201.35V/3-1000x1000.jpg"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "Team Elite Plus 8GB (1 x 8GB) 3200 MHZ CL22 1.35V ",
+        "price": "1,350.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/team-elite-plus-8gb-2666-cl19-ddr4-desktop-memory-1000x1000-1000x1000.jpg"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "G.skill Flare X 16GB (2x8) 3200 CL16",
+        "price": "3,300.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/RAM/Gskill%20Flare%20X%2016GB%20(2x8)%203200%20CL16/1-1000x1000w.jpg"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "Team Elite Plus 16GB (1 x 16GB) 3200 MHz CL22 ",
+        "price": "2,450.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/images-1000x1000w.jpg"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "CORSAIR VENGEANCE RGB 96GB (2x48GB) 5600MHz CL40 DDR5",
+        "price": "25,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Corsair/61EVf-QxpvL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/81Y91CULgSL._AC_SL1500_-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/81fnmTvXQlL._AC_SL1500_-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/81iJ8gp-VHL._AC_SL1500_-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/91mS+ceUWfL._AC_SL1500_-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/71aJuFwo1dL._AC_SL1500_-1000x1000h.jpg"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "Team T-Force Delta RGB 32GB (1x 32GB) 6000MHz CL38 DDR5",
+        "price": "8,900.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/c7e9125289e8b0ddd7679fc48b81148b-20211122084640-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/881bc985098fc08f4b886581ff3c5d99-20211122084640-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/fd449fb6763cac2b097d013a2d8fe7f6-20211122084640-1000x1000.jpg"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "G.SKILL Ripjaws S5 32GB (1 x 32GB) 5600 CL36 DDR5",
+        "price": "8,700.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/G.SKILL/20-374-325-02-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/G.SKILL/20-374-325-03-1-1000x1000w.jpg"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "Team Vulcan 32GB (1 x 32GB) 5600MHz CL36 DDR5",
+        "price": "8,200.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/01-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/02-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/03-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/04-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/61TkP9pvX3L._SL1500_-1000x1000h.jpg"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "Lexar ARES 32GB (2x16) 3600MHz CL18 RGB ",
+        "price": "7,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Lexar/51QpTRhJz0L._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Lexar/cwcac-1000x1000w.PNG"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "Crucial 32GB DDR5 4800Mhz CL40",
+        "price": "6,750.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Crucial/20-156-283-V01-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/20-156-283-V02-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/20-156-283-V08-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/20-156-283-V06-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/20-156-283-V07-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/20-156-283-V91-1000x1000w.jpg"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "Team T-Force Delta RGB 16GB (1x 16GB) 6000MHz CL38 DDR5",
+        "price": "5,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/c7e9125289e8b0ddd7679fc48b81148b-20211122084640-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/881bc985098fc08f4b886581ff3c5d99-20211122084640-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/fd449fb6763cac2b097d013a2d8fe7f6-20211122084640-1000x1000.jpg"
+        ],
+        "category": "memory"
+    },
+    {
+        "title": "GALAX GeForce RTX\u2122 3060 (1-Click OC) 12GB GDDR6",
+        "price": "21,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Galax/3060_GX_BOX_P_oc-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/3060_GX_BOX-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0183-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0184-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0185-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0190-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0195-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0202-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0223-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0225-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0251-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0261-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0268-1000x1000.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "MSI RTX 3060 VENTUS 2X OC 12GB GDDR6",
+        "price": "22,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-632-V04-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-632-01-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-632-V01-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-632-V02-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-632-V03-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-632-V05-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-632-V06-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-632-V07-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-632-V08-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-632-V09-1000x1000w.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "GALAX GeForce RTX\u2122 3060 (1-Click OC) 8GB GDDR6",
+        "price": "19,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Galax/3060_GX_BOX_P_oc-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/3060_GX_BOX-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0183-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0184-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0185-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0190-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0195-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0202-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0223-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0225-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0251-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0261-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/DSC_0268-1000x1000.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "MSI GeForce GTX 1650 D6 VENTUS XS 4GB GDDR6",
+        "price": "9,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Msi/product_8_20200317155243_5e7081cb9206e-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-593-S03-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-593-S05-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-593-S06-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-593-V80-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-593-V81-1000x1000w.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "MSI RTX 3060 Ti VENTUS 2X OC 8GB GDDR6X",
+        "price": "25,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Msi/715A1vU05SL._AC_SL1500_-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/81FJ05yMRDL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/81DVU8EmjEL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/81MlRFGuApL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/81VcVBQFpvL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/71dgLq9xU+L._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/81Grf7gjtlL._AC_SL1500_-1000x1000w.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "MSI GeForce GT 710 LP 2GB DDR3 ",
+        "price": "2,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/VGA/MSI/GT%20710%20LP/L1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/VGA/MSI/GT%20710%20LP/L4-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/VGA/MSI/GT%20710%20LP/L3-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/VGA/MSI/GT%20710%20LP/L2-1000x1000w.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "GALAX GeForce RTX\u2122 4070 Ti SG (1-Click OC) 12GB GDDR6X",
+        "price": "54,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Galax/57afb1bbf47ea315e82f62e7cefca506-hi-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/23c70f7d7717ad37fd8f3e425206fd68-hi-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/0c0856e6a5c361e44845934ee9ba666c-hi-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/4c659c62b32be1b3423b214a97d76e9d-hi-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/461bf439ee317f6b930300e1042a397a-hi-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/e6e30504485cadc09113fb9bc6f736ae-hi-1000x1000w.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "ZOTAC GAMING GEFORCE RTX 3050 ECO SOLO 8GB GDDR6",
+        "price": "16,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Zotac/zt-a30500r-10l-image01-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/zt-a30500r-10l-image02-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/zt-a30500r-10l-image03-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/zt-a30500r-10l-image04-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/zt-a30500r-10l-image05-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/zt-a30500r-10l-image06-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/zt-a30500r-10l-image08-1000x1000w.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "GALAX RTX 4070 Ti EX Gamer V2 12GB GDDR6X",
+        "price": "55,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Galax/b59c0734547d5f8c6fe8e86add8f7b6f-hi-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/819IlgGEf5L._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/41Nq7PLRoNL._AC_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/51qeYuko5UL._AC_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/51CQgrZQNCL._AC_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/41Ajn6C+dIL._AC_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/41ERUi+GRVL._AC_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/410f+ARqxuL._AC_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/41NSSin-K2L._AC_-1000x1000h.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "MSI RTX 4070 Ventus 2X OC 12GB GDDR6",
+        "price": "44,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-787-01-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-787-03-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-787-04-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-787-05-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-787-08-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Msi/14-137-787-09-1000x1000w.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "PNY GeForce RTX\u2122 4070 12GB GDDR6X XLR8 Gaming Verto Epic-X RGB\u2122 Triple Fan",
+        "price": "43,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/PNY/61u5pQ152oL._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/PNY/51LziKqKU9L._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/PNY/51q20Ba+YtL._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/PNY/411ra7tQOyL._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/PNY/518hbBhNNrL._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/PNY/61TRWLv06sL._AC_SL1000_-1000x1000w.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "PNY GeForce RTX\u2122 4060 Ti 16GB GDDR6 Verto Dual Fan",
+        "price": "35,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/PNY/61S-znfrUqL._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/PNY/51rrgKGOdQL._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/PNY/51O7C2+DCZL._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/PNY/51rj9Dg+0mL._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/PNY/51yPZCYWCGL._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/PNY/51GtRaamXYL._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/PNY/51tqUNvSgyL._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/PNY/61V+lgocEzL._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/PNY/61bNLhhhnvL._AC_SL1000_-1000x1000w.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "ZOTAC RTX 4060 Ti 8GB Twin Edge OC SPIDER-MAN\u2122 Edition 8GB GDDR6",
+        "price": "28,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Zotac/zt-d40610h-10smp-image01-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/zt-d40610h-10smp-image02_0-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/zt-d40610h-10smp-image03-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/zt-d40610h-10smp-image04-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/zt-d40610h-10smp-image06-1000x1000w.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "GALAX RTX 4060 Ti EX White 1-Click 8GB GDDR6 OC",
+        "price": "28,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Galax/61-FWATFGSL._AC_SL1000_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/41OjCb4cWXL._AC_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/41XxsL9g8gL._AC_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/71Jl3GZ1QtL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/71Z-1ciNEzL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/417e3kuBr4L._AC_-1000x1000w.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "ZOTAC GAMING RTX 4060 SpiderMan ED 8GB OC GDDR6",
+        "price": "24,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Zotac/14-500-559-02-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/14-500-559-09-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/14-500-559-10-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/14-500-559-04-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/14-500-559-05-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/14-500-559-08-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Zotac/14-500-559-11-1000x1000w.jpg"
+        ],
+        "category": "graphic-card"
+    },
+    {
+        "title": "Crucial P3 GEN 3.0 NVMe 1TB (R 3500 / W 3000)",
+        "price": "4,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Crucial/1-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/2-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/3-2-1000x1000w.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "Team MP33 256G M.2 PCIe SSD",
+        "price": "1,700.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/41BqRxup6XL._AC_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/ssd-team-mp33-256gb-m2-nvme-1000x1000h.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "ADATA SU630 240GB ",
+        "price": "1,600.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/SSD/ADATA%20SU630%20120GB%20/1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/SSD/ADATA%20SU630%20120GB%20/3-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/SSD/ADATA%20SU630%20120GB%20/2-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/SSD/ADATA%20SU630%20120GB%20/notepall2_g1-zoom-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/SSD/ADATA%20SU630%20120GB%20/4-1000x1000w.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "Crucial P3 500GB PCIe 3.0 3D NAND NVMe M.2 SSD",
+        "price": "2,900.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Crucial/1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/2-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/3-1-1000x1000w.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "Team Group GX2 128GB SATA ",
+        "price": "850.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/20-331-315-S01-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/20-331-315-S02-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Team-Group/20-331-315-S04-1000x1000w.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "Lexar NM790 GEN 4.0 NVMe 1TB (R 7400 / W 6500)",
+        "price": "6,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Lexar/61RyfwmuIsL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/NM790SSD_feature_1-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/NM790SSD_feature_2-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/NM790SSD_feature_3-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/NM790SSD_feature_6-1000x1000.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "Crucial P3 GEN 3.0 NVMe 2TB (R 3500 / W 3000)",
+        "price": "7,250.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Crucial/1-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/2-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/3-2-1000x1000w.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "Lexar NM790 PCIe 4.0 512GB",
+        "price": "3,400.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Lexar/61RyfwmuIsL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/NM790SSD_feature_1-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/NM790SSD_feature_2-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/NM790SSD_feature_3-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/NM790SSD_feature_6-1000x1000.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "Samsung 990 Pro With Heatsink GEN 4.0 NVMe 2TB (R 7450 / W 6900)",
+        "price": "13,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Samsung/71MMjbtJNtL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Samsung/715zWolPNVL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Samsung/71uB3TR5D-L._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Samsung/51w2LHmx6XL._AC_SL1200_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Samsung/61R6NeKAe2L._AC_SL1200_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Samsung/61r3vJxC+cL._AC_SL1200_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Samsung/71pVzf1aY0L._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Samsung/61nHC4EofiL._AC_SL1200_-1000x1000w.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "WD BLACK 2TB SN850X NVMe Gen4",
+        "price": "10,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/WD/51D6QpyZmFL._AC_SL1200_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/WD/41tdGySMMbL._AC_SL1200_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/WD/51uIwsZl+tL._AC_SL1200_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/WD/61k+maXr+tL._AC_SL1200_-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/WD/51C7WJS8KJL._AC_SL1200_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/WD/513iKX+LsZL._AC_SL1200_-1000x1000w.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "Crucial T500 2TB Gen4 NVMe M.2",
+        "price": "10,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Crucial/51oXLC2JFHL._AC_SL1080_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/61Uv9m0HlLL._AC_SL1080_-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/71GwYmyjpGL._AC_SL1080_-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/71OkE9cPMHL._AC_SL1080_-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/71uTl5+2r1L._AC_SL1080_-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Crucial/718tn7xZwJL._AC_SL1080_-1000x1000.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "Lexar NM790 GEN 4.0 NVMe 2TB (R 7400 / W 6500)",
+        "price": "9,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Lexar/61RyfwmuIsL._AC_SL1500_-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/NM790SSD_feature_1-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/NM790SSD_feature_2-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/NM790SSD_feature_3-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/NM790SSD_feature_6-1000x1000.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "Lexar NM710 GEN 4.0 NVMe 2TB (R 4850 / W 4500)",
+        "price": "7,800.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Lexar/31PT-70gIgL._SL500_-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Lexar/51Glgbu0TeL._SL500_-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Lexar/61JAZPk5xSL._SL500_-1000x1000.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "Samsung 980 PRO with Heatsink GEN 4.0 NVMe 1TB (R 7000 / W 5000)",
+        "price": "7,000.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Samsung/61N-VHimbL.ACSL1500-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Samsung/980PROProductimages_1600x1200-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Samsung/MZ-V8P2T0CW_01-1000x1000w.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "Lexar NM710 500GB M.2 Gen4",
+        "price": "2,900.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Lexar/31PT-70gIgL._SL500_-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Lexar/51Glgbu0TeL._SL500_-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Lexar/61JAZPk5xSL._SL500_-1000x1000.jpg"
+        ],
+        "category": "ssd"
+    },
+    {
+        "title": "Logitech Desktop combo MK120 (AR Layout)",
+        "price": "650.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/keyboard/%20%20%20%20%20%20%20%20%20%20%20%20%20MK120/1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/keyboard/%20%20%20%20%20%20%20%20%20%20%20%20%20MK120/3-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/keyboard/%20%20%20%20%20%20%20%20%20%20%20%20%20MK120/4-1000x1000w.jpg"
+        ],
+        "category": "keyboard-mouse"
+    },
+    {
+        "title": "Gamdias ZEUS E3 Gaming Mouse + NYX E1 Gaming Mouse Mat Combo",
+        "price": "500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/ZEUS_M3_Slogan-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/ZEUS_M4_Exh4-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/ZEUS_M4_Exh5-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/ZEUS_M3_Exh1-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/ZEUS_M3_Exh2-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/ZEUS_M3_Exh3-1000x1000.jpg"
+        ],
+        "category": "keyboard-mouse"
+    },
+    {
+        "title": "Msi Clutch GM41 Light Weight Gaming Mouse",
+        "price": "1,300.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Msi/product_160912997431e71d521184f5d2daa021b0d601b112-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/Msi/product_1609129971ffc224eb3a1a5655b88008455b167b18-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/Msi/product_1609129972b4d9760c1fdb3fd5077052c1668012cd-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/Msi/product_160912997151c43ed033d193ff7fad03d01974beaa-1000x1000w.png",
+            "https://maximumhardware.store/image/cache/catalog/Msi/product_1609129972743d03ea5a851353fecfa0293b2deca0-1000x1000w.png"
+        ],
+        "category": "keyboard-mouse"
+    },
+    {
+        "title": "Msi Clutch GM30 Gaming Mouse ",
+        "price": "1,200.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Gaming%20Mouse/%20%20Clutch%20GM30%20Gaming%20Mouse%20/1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Gaming%20Mouse/%20%20Clutch%20GM30%20Gaming%20Mouse%20/3-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Gaming%20Mouse/%20%20Clutch%20GM30%20Gaming%20Mouse%20/2-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Gaming%20Mouse/%20%20Clutch%20GM30%20Gaming%20Mouse%20/4-1000x1000w.jpg"
+        ],
+        "category": "keyboard-mouse"
+    },
+    {
+        "title": "Gamdias Zeus M4 RGB Gaming Mouse + NYX E1 Gaming Mouse Mat Combo",
+        "price": "750.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/ZEUS_M4_Slogan-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/ZEUS_M4_Exh1-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/ZEUS_M4_Exh2-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/ZEUS_M4_Exh3-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/ZEUS_M4_Exh4-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/ZEUS_M4_Exh5-1000x1000w.jpg"
+        ],
+        "category": "keyboard-mouse"
+    },
+    {
+        "title": "Corsair HARPOON RGB PRO FPS/MOBA Gaming Mouse",
+        "price": "1,300.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Corsair/26-816-129-V08-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/26-816-129-V01-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/26-816-129-V02-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/26-816-129-V03-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/26-816-129-V04-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/26-816-129-V05-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/26-816-129-V06-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/26-816-129-V07-1000x1000w.jpg"
+        ],
+        "category": "keyboard-mouse"
+    },
+    {
+        "title": "GALAX Gaming Mouse Slider - 03 ",
+        "price": "800.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Galax/slr03_box02-600-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/Galax/dsc_3932-600-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/Galax/dsc_3894-600-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/Galax/dsc_3910-600-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/Galax/dsc_3865-600-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/Galax/dsc_3885-600-1000x1000.png"
+        ],
+        "category": "keyboard-mouse"
+    },
+    {
+        "title": "MSI VIGOR GK30 RGB GAMING COMBO (CLUTCH GM11+GK30) (AR Layout)",
+        "price": "1,900.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/keyboard/%20%20MSI%20VIGOR%20GK30%20RGB%20GAMING%20COMBO%20(CLUTCH%20GM11+GK30)/1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/keyboard/%20%20MSI%20VIGOR%20GK30%20RGB%20GAMING%20COMBO%20(CLUTCH%20GM11+GK30)/3-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/keyboard/%20%20MSI%20VIGOR%20GK30%20RGB%20GAMING%20COMBO%20(CLUTCH%20GM11+GK30)/2-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/keyboard/%20%20MSI%20VIGOR%20GK30%20RGB%20GAMING%20COMBO%20(CLUTCH%20GM11+GK30)/4-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/keyboard/%20%20MSI%20VIGOR%20GK30%20RGB%20GAMING%20COMBO%20(CLUTCH%20GM11+GK30)/5-1000x1000w.jpg"
+        ],
+        "category": "keyboard-mouse"
+    },
+    {
+        "title": "Corsair IRONCLAW RGB WIRELESS Gaming Mouse",
+        "price": "2,899.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Corsair/26-816-126-V08-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/26-816-126-V09-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/26-816-126-V03-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/26-816-126-V05-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/26-816-126-V06-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Corsair/26-816-126-V10-1000x1000w.jpg"
+        ],
+        "category": "keyboard-mouse"
+    },
+    {
+        "title": "GALAX STEALTH STL-03 \u2013 RGB Mechanical Gaming Keyboard (Blue Switch)",
+        "price": "1,200.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/XPG/dUeY5ZHmlnKm4aOqVUf5LDnh8i3GgZJmNb3B2hlHO-2000x2000-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/Galax/2-2-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/3-2-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/4-1-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/5-1-1000x1000w.jpg"
+        ],
+        "category": "keyboard-mouse"
+    },
+    {
+        "title": "XIGMATEK G1 RGB GAMING Mouse",
+        "price": "350.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/XIGMATEK/tmp_20221109164830910-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/XIGMATEK/tmp_20221109163614985-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/XIGMATEK/tmp_20221109163611929-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/XIGMATEK/tmp_20221109163627832-1000x1000w.jpg"
+        ],
+        "category": "keyboard-mouse"
+    },
+    {
+        "title": "GAMDIAS HEBE M2 RGB VIRTUAL 7.1 GAMING HEADSET",
+        "price": "1,500.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Headphone/%20%20%20%20%20%20HEBE%20M2/1-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Headphone/%20%20%20%20%20%20HEBE%20M2/2-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Headphone/%20%20%20%20%20%20HEBE%20M2/3-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Headphone/%20%20%20%20%20%20HEBE%20M2/4-1000x1000w.jpg"
+        ],
+        "category": "headphones-speakers"
+    },
+    {
+        "title": "Gamdias HEBE E1 RGB Stereo Lighting Gaming Headset",
+        "price": "750.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/gamdias-hebe-e1-rgb-3-5mm-headphone-hypermart86-1807-13-F224845_3-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/26-374-032-Z08-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/26-374-032-Z07-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/26-374-032-Z09-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/26-374-032-Z04-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/413T4t+5wIL-1000x1000.jpg"
+        ],
+        "category": "headphones-speakers"
+    },
+    {
+        "title": "GAMDIAS HEBE M3 RGB VIRTUAL 7.1 GAMING HEADSET",
+        "price": "900.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/HEBE_M3_Slogan-1000x1000.png",
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/HEBE_M3_Exh1-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/HEBE_M3_Exh2-1000x1000.jpg",
+            "https://maximumhardware.store/image/cache/catalog/GAMDIAS/HEBE_M3_Exh3-1000x1000.jpg"
+        ],
+        "category": "headphones-speakers"
+    },
+    {
+        "title": "GALAX Sonar-04 USB 7.1 Channel RGB Gaming Headset",
+        "price": "1,300.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/Galax/3-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/2-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/4-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/5-1000x1000h.jpg",
+            "https://maximumhardware.store/image/cache/catalog/Galax/Capture-1000x1000w.jpg"
+        ],
+        "category": "headphones-speakers"
+    },
+    {
+        "title": "MSI DS501 3.5mm Connector Circumaural Gaming Headset",
+        "price": "850.00",
+        "images": [
+            "https://maximumhardware.store/image/cache/catalog/26-554-011-03-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/26-554-011-06-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/26-554-011-02-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/26-554-011-05-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/26-554-011-04-1000x1000w.jpg",
+            "https://maximumhardware.store/image/cache/catalog/26-554-011-07-1000x1000w.jpg"
+        ],
+        "category": "headphones-speakers"
+    }
+]

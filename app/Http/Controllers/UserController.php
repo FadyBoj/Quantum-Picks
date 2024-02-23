@@ -521,7 +521,7 @@ class UserController extends Controller
                 "password" => null,
                 "verification_code" => mt_rand(1000000,9999999),
                 "vCode_date" => Date::now(),
-                "complete" => false,
+                "complete" => true,
                 "google" => true,
                 "regular" => false
             ]);
@@ -568,17 +568,27 @@ class UserController extends Controller
 
         }
 
-        return response()->json(["token" => $token],200)
+        return redirect()->route('home')
         ->cookie("accessToken",$token,$oneDay,null,null,true,true)->withoutCookie('cart');
     }
 
     //Fill account missing information 
 
-    public function fillMissingInformation(Request $request)
+    public function completeData(Request $request)
     {
-        $user = Socialite::driver('google')->stateless()->user();
-        $user = $user->user;
-        return response()->json($user,200);
+        $user = Auth::guard('api')->user();
+        $email = $user->email;
+
+        $data = $request->only(['firstname','lastname']);
+
+        User::where('id',$user->id)
+        ->update([
+            "firstname" => $data['firstname'],
+            "lastname" => $data["lastname"], 
+            "complete" => true
+        ]);
+
+        return response()->json(["msg" => "Successfully updated your data."],200);
     }
 
 }

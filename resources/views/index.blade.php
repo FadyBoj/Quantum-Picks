@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/assets/index-XvNh8szE.js"></script>
+    <title>Quantum Picks</title>
+    <script type="module" crossorigin src="/assets/index-sVK9qkrT.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-h1jUzRJu.css">
   </head>
   <body>
     <div id="root"></div>
